@@ -1,10 +1,33 @@
-.inner {
-	padding: 10px;
-	margin: 10px;
-	background-color: grey;
-	border-radius: 3px;
+.row > div {
+	padding: 0;
 }
 
-.navbar {
-	margin-bottom: 10px;
+.inner { 
+	padding: 10px;
+	margin: 15px 5px;
+	background-color: grey;
+	border-radius: 3px;
+	overflow: wrap;
+}
+
+body hr {
+	margin-left: 0;
+	margin-top: 0;
+	border-top: 2px solid black;
+}
+
+#about-me hr {
+	width: 175px;
+}
+
+#projects hr, #contact hr {
+	width: 140px;
+}
+
+#about-me img {
+	width: 80%;
+	height: auto;
+	display: block;
+	border-radius: 10px;
+	border: 2px solid black;
 }
