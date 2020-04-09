@@ -2,11 +2,19 @@
 	padding: 0;
 }
 
+.navbar {
+	margin-bottom: 20px;
+}
+
+/******** general column styling ********/
+
 .inner { 
 	padding: 10px;
-	margin: 15px 5px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
 	background-color: grey;
-	border-radius: 3px;
+	border-radius: 1px;
 	overflow: wrap;
 }
 
@@ -24,10 +32,95 @@ body hr {
 	width: 140px;
 }
 
+/******** "About me" styling ********/
+
 #about-me img {
 	width: 80%;
 	height: auto;
 	display: block;
-	border-radius: 10px;
+	border-radius: 1px;
 	border: 2px solid black;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
+
+.inner p {
+	display: block;
+	width: 80%;
+}
+
+/******** "Projects" styling ********/
+
+.project {
+	position: relative;
+	background-color: white;
+	width: 300px;
+	height: 70px;
+	border-radius: 1px;
+	border: 2px solid black;
+	margin-bottom: 15px;
+}
+
+.project:hover {
+	background-color: lightgrey;
+}
+
+.project a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.project img {
+	width: 40px;
+	margin-left: 10px;
+
+	/* to center vertically */
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.project span {
+	margin-left: 65px;
+	color: black;
+
+	/* to center vertically */
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+
+/******** individual media queries ********/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.inner#about-me {
+		margin-right: 10px;
+		margin-left: 20px;
+	}
+	.inner#projects {
+		margin-right: 20px;
+		margin-left: 10px;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.inner#projects {
+		margin-right: 5px;
+	}
+	.inner#contact {
+		margin-right: 20px;
+		margin-left: 5px;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
