@@ -22,14 +22,61 @@ body {
 	padding: 0;
 }
 
-.navbar {
-	background-color: grey;
-	box-shadow: 0 3px black;
-}
-
 h1, h2 {
 	color: black;
 	font-weight: bold;
+}
+
+h1 {
+	margin: 10px;
+}
+
+/******** navbar styling ********/
+
+.navbar {
+	background-color: grey;
+	box-shadow: 0 3px black;
+	padding: 0;
+}
+
+#navbarToggler ul {
+	border-top: 3px solid black;
+}
+
+.navbar-light .navbar-toggler { /* navbar toggler */
+	border-color: black;
+	margin-right: 20px;
+}
+
+.navbar-collapse {
+	background-color: black;
+}
+
+.navbar .navbar-nav .nav-link { /* dropdown menu text */
+	color: black;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.navbar .navbar-nav .nav-item { /* dropdown menu items */
+	background-color: darkgrey;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+	background-color: lightgrey;
+	color: black;
+}
+
+.navbar .navbar-nav .nav-link:active {
+	background-color: #f0f0f0;
+	color: black;
+}
+
+#item1, #item2 { /* this is to add lines between the items */
+	margin-bottom: 1px;
 }
 
 /******** general column styling ********/
