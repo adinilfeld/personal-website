@@ -1,11 +1,19 @@
+.container-fluid {
+	padding-top: 20px;
+	background-color: lightgrey;
+}
+
 .row > div {
 	padding: 0;
 }
 
 .navbar {
-	margin-bottom: 20px;
+	background-color: black;
 }
 
+h1 {
+	color: white;
+}
 /******** general column styling ********/
 
 .inner { 
@@ -16,6 +24,7 @@
 	background-color: grey;
 	border-radius: 1px;
 	overflow: wrap;
+	box-shadow: 7px 7px black;
 }
 
 body hr {
@@ -32,6 +41,10 @@ body hr {
 	width: 140px;
 }
 
+.box-shadow-small {
+	box-shadow: 5px 5px black;
+}
+
 /******** "About me" styling ********/
 
 #self-photo {
@@ -42,7 +55,7 @@ body hr {
 	height: 200px;
 	display: block;
 	border-radius: 1px;
-	border: 2px solid black;
+	/*border: 2px solid black;*/
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
@@ -60,7 +73,7 @@ body hr {
 	width: 80%;
 	height: auto;
 	border-radius: 1px;
-	border: 2px solid black;
+	/*border: 2px solid black;*/
 	margin-bottom: 15px;
 }
 
@@ -109,7 +122,6 @@ div.contact-method {
 	display: inline-block;
 	margin: 0 25px 25px 25px;
 	border-radius: 1px;
-	border: 2px solid black;
 }
 
 div#email:hover, div#linkedin:hover {
