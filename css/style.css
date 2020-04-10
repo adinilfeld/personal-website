@@ -1,10 +1,21 @@
+/* how to create variables: 
+:root {
+	--color1: coral;
+}
+how to reference variables:
+background-color: var(--color1);
+*/
+
 * {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.container-fluid {
-	padding-top: 20px;
+body {
 	background-color: lightgrey;
+}
+
+.container-fluid {
+	padding-top: 30px;
 }
 
 .row > div {
@@ -13,15 +24,12 @@
 
 .navbar {
 	background-color: grey;
-	box-shadow: 0 5px black;
-}
-
-h1 {
-	font-weight: bold;
+	box-shadow: 0 3px black;
 }
 
 h1, h2 {
 	color: black;
+	font-weight: bold;
 }
 
 /******** general column styling ********/
@@ -30,11 +38,11 @@ h1, h2 {
 	padding: 10px;
 	margin-right: 20px;
 	margin-left: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	background-color: grey;
 	border-radius: 1px;
 	overflow: wrap;
-	box-shadow: 7px 7px black;
+	box-shadow: 5px 5px black;
 }
 
 body hr {
@@ -52,7 +60,7 @@ body hr {
 }
 
 .box-shadow-small {
-	box-shadow: 5px 5px black;
+	box-shadow: 3px 3px black;
 }
 
 /******** "About me" styling ********/
@@ -87,7 +95,7 @@ body hr {
 }
 
 .project:hover {
-	background-color: lightgrey;
+	box-shadow: 7px 7px black;
 }
 
 .project a {
@@ -137,8 +145,8 @@ div.contact-method {
 	border-radius: 1px;
 }
 
-div#email:hover, div#linkedin:hover {
-	background-color: lightgrey;
+div.contact-method:hover {
+	box-shadow: 7px 7px black;
 }
 
 div#snapchat, div#instagram, div#email {
@@ -161,9 +169,9 @@ div#snapchat, div#instagram, div#email {
   bottom: 0;
   left: 0;
   right: 0;
-  font-size: 1.3em;
-  background: rgba(128, 128, 128, 0.95);
-  color: white;
+  font-size: 1.2em;
+  background: rgb(211, 211, 211, .95);
+  color: black;
   visibility: hidden;
 }
 
@@ -180,20 +188,20 @@ div#snapchat, div#instagram, div#email {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	.inner#about-me {
-		margin-right: 10px;
+		margin-right: 20px;
 	}
 	.inner#projects {
-		margin-left: 10px;
+		margin-left: 20px;
 	}
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 	.inner#projects {
-		margin-right: 10px;
+		margin-right: 20px;
 	}
 	.inner#contact {
-		margin-left: 10px;
+		margin-left: 20px;
 	}
 }
 
