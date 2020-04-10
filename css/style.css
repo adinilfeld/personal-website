@@ -45,6 +45,11 @@ h1, h2 {
 	box-shadow: 5px 5px black;
 }
 
+.inner:hover {
+	transform: scale(1.01);
+	box-shadow: 7px 7px black;
+}
+
 body hr {
 	margin-left: 0;
 	margin-top: 0;
@@ -96,6 +101,7 @@ body hr {
 
 .project:hover {
 	box-shadow: 7px 7px black;
+	transform: scale(1.02);
 }
 
 .project a {
@@ -147,6 +153,7 @@ div.contact-method {
 
 div.contact-method:hover {
 	box-shadow: 7px 7px black;
+	transform: scale(1.02);
 }
 
 div#snapchat, div#instagram, div#email {
