@@ -62,7 +62,6 @@ body hr {
 	border-radius: 1px;
 	border: 2px solid black;
 	margin-bottom: 15px;
-	/*vertical-align: middle;*/
 }
 
 .project:hover {
@@ -97,6 +96,56 @@ body hr {
 	vertical-align: middle;
 }
 
+/******** "Contact" styling ********/
+
+#contact #contact-container {
+	text-align: center;
+}
+
+div.contact-method {
+	width: 125px;
+	height: 125px;
+	background-color: white;
+	display: inline-block;
+	margin: 0 25px 25px 25px;
+	border-radius: 1px;
+	border: 2px solid black;
+}
+
+div#email:hover, div#linkedin:hover {
+	background-color: lightgrey;
+}
+
+div#snapchat, div#instagram, div#email {
+	padding: 15px;
+}
+
+.contact-method img {
+	width: 100%;
+	height: auto;
+}
+
+.hover-wrapper {
+  position: relative;
+}
+
+.show-on-hover {
+  position: absolute;
+  padding-top: 43px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 1.3em;
+  background: rgba(128, 128, 128, 0.95);
+  color: white;
+  visibility: hidden;
+}
+
+.hover-wrapper:hover .show-on-hover {
+  visibility: visible;
+  opacity: 1;
+}
 
 /******** individual media queries ********/
 
