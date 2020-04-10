@@ -87,6 +87,10 @@ body hr {
 	width: 80%;
 }
 
+#resume img {
+	filter: brightness(0%);
+}
+
 /******** "Projects" styling ********/
 
 .project {
@@ -116,6 +120,7 @@ body hr {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	vertical-align: middle;
+	filter: brightness(0%);
 }
 
 .project a:hover {
@@ -163,6 +168,7 @@ div#snapchat, div#instagram, div#email {
 .contact-method img {
 	width: 100%;
 	height: auto;
+	filter: brightness(0%);
 }
 
 .hover-wrapper {
