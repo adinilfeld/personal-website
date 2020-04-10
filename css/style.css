@@ -34,9 +34,12 @@ body hr {
 
 /******** "About me" styling ********/
 
-#about-me img {
+#self-photo {
+	background-image: url('../img/Photo_Wide.jpeg');
+	background-size: cover;
+	background-position: center;
 	width: 80%;
-	height: auto;
+	height: 200px;
 	display: block;
 	border-radius: 1px;
 	border: 2px solid black;
@@ -104,10 +107,8 @@ body hr {
 @media (min-width: 768px) {
 	.inner#about-me {
 		margin-right: 10px;
-		margin-left: 20px;
 	}
 	.inner#projects {
-		margin-right: 20px;
 		margin-left: 10px;
 	}
 }
@@ -118,8 +119,7 @@ body hr {
 		margin-right: 5px;
 	}
 	.inner#contact {
-		margin-right: 20px;
-		margin-left: 5px;
+		margin-left: 10px;
 	}
 }
 
