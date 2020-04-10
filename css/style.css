@@ -1,3 +1,7 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
 .container-fluid {
 	padding-top: 20px;
 	background-color: lightgrey;
@@ -8,12 +12,18 @@
 }
 
 .navbar {
-	background-color: black;
+	background-color: grey;
+	box-shadow: 0 5px black;
 }
 
 h1 {
-	color: white;
+	font-weight: bold;
 }
+
+h1, h2 {
+	color: black;
+}
+
 /******** general column styling ********/
 
 .inner { 
@@ -55,7 +65,6 @@ body hr {
 	height: 200px;
 	display: block;
 	border-radius: 1px;
-	/*border: 2px solid black;*/
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
@@ -69,12 +78,12 @@ body hr {
 
 .project {
 	position: relative;
-	background-color: white;
+	background-color: #f0f0f0;
 	width: 80%;
 	height: auto;
 	border-radius: 1px;
-	/*border: 2px solid black;*/
 	margin-bottom: 15px;
+	font-size: .95em;
 }
 
 .project:hover {
@@ -115,12 +124,16 @@ body hr {
 	text-align: center;
 }
 
+#contact hr {
+	margin-bottom: 1px;
+}
+
 div.contact-method {
-	width: 125px;
-	height: 125px;
-	background-color: white;
+	width: 115px;
+	height: 115px;
+	background-color: #f0f0f0;
 	display: inline-block;
-	margin: 0 25px 25px 25px;
+	margin: 15px;
 	border-radius: 1px;
 }
 
@@ -177,7 +190,7 @@ div#snapchat, div#instagram, div#email {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 	.inner#projects {
-		margin-right: 5px;
+		margin-right: 10px;
 	}
 	.inner#contact {
 		margin-left: 10px;
