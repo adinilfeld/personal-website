@@ -1,17 +1,26 @@
-/* how to create variables: 
-:root {
-	--color1: coral;
+/* root { /* grey color scheme *//*
+	--darkcolor: grey;
+	--lightcolor: lightgrey;
+	--medcolor: darkgrey;
+	--buttoncolor: #f0f0f0;
+}*/
+
+:root { /* blue color scheme */
+	--navbarcolor: #5d8bd4;
+	--sectioncolor: #5d8bd4;
+	--backgroundcolor: white;
+	--dropdowncolor: #96afd9;
+	--buttoncolor: white;
+	--menuhovercolor: #5d8bd4;
+	--menuclickcolor: #3268bf;
 }
-how to reference variables:
-background-color: var(--color1);
-*/
 
 * {
 	font-family: 'Open Sans', sans-serif;
 }
 
 body {
-	background-color: lightgrey;
+	background-color: var(--backgroundcolor);
 }
 
 .container-fluid {
@@ -34,7 +43,7 @@ h1 {
 /******** navbar styling ********/
 
 .navbar {
-	background-color: grey;
+	background-color: var(--navbarcolor);
 	box-shadow: 0 3px black;
 	padding: 0;
 }
@@ -61,16 +70,16 @@ h1 {
 }
 
 .navbar .navbar-nav .nav-item { /* dropdown menu items */
-	background-color: darkgrey;
+	background-color: var(--dropdowncolor);
 }
 
 .navbar .navbar-nav .nav-link:hover {
-	background-color: lightgrey;
+	background-color: var(--menuhovercolor);
 	color: black;
 }
 
 .navbar .navbar-nav .nav-link:active {
-	background-color: #f0f0f0;
+	background-color: var(--menuclickcolor);
 	color: black;
 }
 
@@ -85,7 +94,7 @@ h1 {
 	margin-right: 20px;
 	margin-left: 20px;
 	margin-bottom: 30px;
-	background-color: grey;
+	background-color: var(--sectioncolor);
 	border-radius: 1px;
 	overflow: wrap;
 	box-shadow: 5px 5px black;
@@ -141,7 +150,7 @@ body hr {
 
 .project {
 	position: relative;
-	background-color: #f0f0f0;
+	background-color: var(--buttoncolor);
 	width: 80%;
 	height: auto;
 	border-radius: 1px;
@@ -196,7 +205,7 @@ body hr {
 div.contact-method {
 	width: 115px;
 	height: 115px;
-	background-color: #f0f0f0;
+	background-color: var(--buttoncolor);
 	display: inline-block;
 	margin: 15px;
 	border-radius: 1px;
